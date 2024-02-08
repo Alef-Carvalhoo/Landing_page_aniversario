@@ -1,0 +1,40 @@
+@use 'variables';
+
+.header {
+    padding-top: 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+
+    &__title {
+        color: variables.$textColor;
+        font-size: 30px;
+        letter-spacing: 20px;
+        font-weight: 400;
+    }
+
+    &__menu {
+        padding: 24px 80px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 2px rgb(255, 255, 255, .5);
+    }
+
+        &__logo {
+            height: 40px;
+        }
+
+        &__list {
+            padding-top: 10px;
+        }
+
+        a {
+        font-size: 20px;
+        font-weight: normal;
+        color: variables.$textColor;
+        text-align: center;
+        padding: 10px;
+        }
+
+        
+}

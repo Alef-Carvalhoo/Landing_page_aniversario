@@ -1,0 +1,35 @@
+@use 'variables';
+
+.hero {
+
+    .container {
+        max-width: 1280px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    &__content {
+
+        &__logo {
+            max-width: 350px;
+            border: solid transparent;
+            border-radius: 20px;
+            margin-top: 80px;
+        }
+    }
+
+    &__time {
+        font-size: 50px;
+        max-width: 430px;
+        color: variables.$textColor;
+        margin-right: 120px;
+        
+        span {
+            font-size: 32px;
+            white-space: nowrap;
+        }
+    }
+}

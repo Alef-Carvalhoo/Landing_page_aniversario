@@ -1,0 +1,11 @@
+@use '../variables';
+
+.button {
+    background-color: variables.$buttonColor;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: variables.$buttonColor;
+        opacity: .9;
+    }
+}

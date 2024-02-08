@@ -1,0 +1,39 @@
+@use 'variables';
+@use 'header';
+@use 'event';
+@use './components/buttons';
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Concert One', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    border: solid rgb(255,255,255, .5);
+}
+
+body {
+    background: linear-gradient(-45deg,
+    variables.$gradient2,
+    variables.$corDeFundoPrincipal,
+    variables.$gradient1);
+    background-size: 400% 400%;
+    animation: gradient 8s infinite ease-in-out;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
